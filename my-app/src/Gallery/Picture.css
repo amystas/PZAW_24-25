@@ -1,0 +1,17 @@
+.picture
+{
+    border: solid 2px palevioletred;
+    background-color: lightpink;
+    width: 16%;
+    text-align: center;
+}
+#gallery 
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+input[type='range']
+{
+    accent-color: hotpink;
+}
