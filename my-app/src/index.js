@@ -7,16 +7,18 @@ import MyComponent from './MyComponent';
 import Form from './Form';
 import Table from './Table';
 import Table2 from './Table2';
+import Gallery from './Gallery/Gallery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Sci />
+    {/* <Sci />
     <MyComponent></MyComponent>
     <Form></Form>
     <Table></Table>
-    <Table2></Table2>
+    <Table2></Table2> */}
+    <Gallery></Gallery>
   </React.StrictMode>
 );
 
