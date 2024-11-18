@@ -2,11 +2,16 @@ const express = require("express");
 const application = express();
 const cors = require('cors')
 application.use(cors());
-
+const users = []
 application.use(express.json());
 application.post("/register", (request, response) => {
     console.log(request.body);
+    users.push(request.body)
     response.send();
+})
+application.get("/register", (request, response) => {
+    
+    response.send(users);
 })
 
 application.get('/', (request, response) => {

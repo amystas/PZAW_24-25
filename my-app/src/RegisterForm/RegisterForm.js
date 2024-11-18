@@ -26,18 +26,18 @@ function RegisterForm()
  
     return (
         <>
-            <input type="text" ref={nameRef} name="name"></input> <label for="name">imię</label> <br />
-            <input type="text" ref={surnameRef} name="surname"></input> <label for="surname">nazwisko</label> <br />
-            <input type="password" ref={passwordRef} name="password"></input> <label for="password">hasło</label> <br />
-            <input type="radio" value="woman" id="woman" name="gender" onChange={genderChange} checked={gender === "woman"}></input> <label htmlFor="woman">kobieta</label>
-            <input type="radio" value="man" id="man" name="gender" onChange={genderChange} checked={gender === "man"}></input> <label htmlFor="man">mężczyzna</label>
-            <input type="radio" value="other" id="other" name="gender" onChange={genderChange} checked={gender === "other"}></input> <label htmlFor="other">inna</label>
+            <input type="text" ref={nameRef} class="form-control" name="name"></input> <label for="name">imię</label> <br />
+            <input type="text" ref={surnameRef} class="form-control" name="surname"></input> <label for="surname">nazwisko</label> <br />
+            <input type="password" ref={passwordRef} class="form-control" name="password"></input> <label for="password">hasło</label> <br />
+            <input type="radio" value="woman" class="form-check-input" id="woman" name="gender" onChange={genderChange} checked={gender === "woman"}></input> <label htmlFor="woman">kobieta</label>
+            <input type="radio" value="man" class="form-check-input" id="man" name="gender" onChange={genderChange} checked={gender === "man"}></input> <label htmlFor="man">mężczyzna</label>
+            <input type="radio" value="other" class="form-check-input" id="other" name="gender" onChange={genderChange} checked={gender === "other"}></input> <label htmlFor="other">inna</label>
             <br />
-            <input type="checkbox" value="java" id="java"></input> <label htmlFor="java">Java</label>
-            <input type="checkbox" value="csharp" id="csharp" ></input> <label htmlFor="csharp">C#</label>
-            <input type="checkbox" value="python" id="python" ></input> <label htmlFor="python">Python</label>
+            <input type="checkbox" value="java" class="form-check-input" id="java"></input> <label htmlFor="java">Java</label>
+            <input type="checkbox" value="csharp"  class="form-check-input" id="csharp" ></input> <label htmlFor="csharp">C#</label>
+            <input type="checkbox" value="python"  class="form-check-input" id="python" ></input> <label htmlFor="python">Python</label>
             <br />
-            <button onClick={send}>wyślij</button>
+            <button onClick={send} class="btn btn-primary">wyślij</button>
         </>
     )
 }

@@ -10,6 +10,7 @@ import Table2 from './Table2';
 import Gallery from './Gallery/Gallery';
 import AxiosExample from './AxiosExample';
 import RegisterForm from './RegisterForm/RegisterForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
