@@ -8,6 +8,8 @@ import Form from './Form';
 import Table from './Table';
 import Table2 from './Table2';
 import Gallery from './Gallery/Gallery';
+import AxiosExample from './AxiosExample';
+import RegisterForm from './RegisterForm/RegisterForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +20,9 @@ root.render(
     <Form></Form>
     <Table></Table>
     <Table2></Table2> */}
-    <Gallery></Gallery>
+    {/* <Gallery></Gallery> */}
+    {/* <AxiosExample></AxiosExample> */}
+    <RegisterForm></RegisterForm>
   </React.StrictMode>
 );
 
