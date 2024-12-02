@@ -1,0 +1,21 @@
+<div class="card m-3" style="width: 18rem; border: 2px solid #CD523C; border-radius: 10px;">
+    <img src={{imagePath}}
+         class="card-img-top" 
+         alt="Bulbasaur" 
+         style="background-color: #F5F5F5; border-bottom: 2px solid #CD523C;">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{pokemon.name.english}}</h5>
+      <p class="card-text">
+        <span *ngFor="let type of pokemon.type" class="badge bg-success">{{type}}</span>
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">HP: {{pokemon.base.HP}}</li>
+      <li class="list-group-item">Attack: {{pokemon.base.Attack}}</li>
+      <li class="list-group-item">Defense: {{pokemon.base.Defense}}</li>
+      <li class="list-group-item">Sp. Attack: {{pokemon.base["Sp. Attack"]}}</li>
+      <li class="list-group-item">Sp. Defense: {{pokemon.base["Sp. Defense"]}}</li>
+      <li class="list-group-item">Speed: {{pokemon.base.Speed}}</li>
+    </ul>
+  </div>
+  
